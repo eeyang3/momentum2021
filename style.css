@@ -10,9 +10,6 @@ body {
   position: relative;
 }
 
-.clock {
-  margin-top: 10%;
-}
 .background_image {
   position: absolute;
   z-index: -1;
