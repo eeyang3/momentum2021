@@ -1,3 +1,20 @@
 .hidden {
   display: none;
 }
+
+body {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  position: relative;
+}
+
+.clock {
+  margin-top: 10%;
+}
+.background_image {
+  position: absolute;
+  z-index: -1;
+  margin: 0px 0px;
+  opacity: 50%;
+}
