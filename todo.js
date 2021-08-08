@@ -1,6 +1,7 @@
 const toDoForm = document.getElementById("todo-form");
 const toDoInput = document.querySelector("#todo-form input");
 const toDoList = document.getElementById("todo-list");
+const deleteBtn = document.getElementById("delete_btn");
 const TODOS_KEY = "todos";
 let toDos = [];
 function saveToDos() {
@@ -46,3 +47,9 @@ if (savedToDos !== null) {
   toDos = parsedToDos;
   parsedToDos.forEach(paintToDo);
 }
+function removeItem() {
+  const items = document.querySelector("li");
+  items.remove();
+}
+
+//deletBtn.addEventListener("remove", removeItem);
