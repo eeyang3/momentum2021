@@ -1,3 +1,12 @@
+@import url("https://fonts.googleapis.com/css2?family=Gowun+Dodum&family=Lobster&family=Teko:wght@300;400&display=swap");
+
+/* 
+할일 목록 
+
+시간 
+font-family: "Teko", sans-serif;
+쿼트 */
+
 .hidden {
   display: none;
 }
@@ -16,4 +25,47 @@ body {
   z-index: -1;
   margin: 0px 0px;
   opacity: 50%;
+}
+
+/* 여기서 부터는 꾸미기 */
+
+h2 {
+  font-family: "Lobster", cursive;
+  font-size: 200px;
+  margin-top: 20px;
+}
+
+#login-form,
+#greeting {
+  margin-top: -10%;
+}
+
+button,
+#delete_btn {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+#delete_btn {
+  size: 50px 50px;
+}
+
+#todo-form input {
+  font-size: 10px;
+  padding-bottom: 10px;
+  width: 13.5%;
+  border: none;
+  color: black;
+  background-color: rgba(255, 255, 255, 50%);
+  font-size: 15px;
+}
+
+li {
+  font-family: "Gowun Dodum", sans-serif;
+  list-style: none;
+}
+
+ul {
+  height: 100px;
 }
