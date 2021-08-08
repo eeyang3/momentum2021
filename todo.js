@@ -9,7 +9,8 @@ function saveToDos() {
 
 function deleteToDo(event) {
   const li = event.target.parentElement;
-  li.remove();
+  //li.remove();
+  li.style.textDecoration = "line-through";
   toDos = toDos.filter((toDo) => toDo.id !== parseInt(li.id));
   saveToDos();
 }
@@ -20,7 +21,7 @@ function paintToDo(newTodo) {
   const span = document.createElement("span");
   span.innerText = newTodo.text;
   const button = document.createElement("button");
-  button.innerText = "❌";
+  button.innerText = "✅";
   button.addEventListener("click", deleteToDo);
   li.appendChild(span);
   li.appendChild(button);
